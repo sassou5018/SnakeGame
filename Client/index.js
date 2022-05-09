@@ -35,6 +35,7 @@ socket.on("gameOver", handleGameOver);
 socket.on("gameCode", handleGameCode);
 socket.on("unknownCode", handleUnknownGame);
 socket.on("tooManyPlayers", handleTooManyPlayers);
+socket.on("init", handleInit);
 
 
 const gameState = {
