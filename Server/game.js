@@ -127,7 +127,7 @@ function randomFood(state) {
 }
 
 
-function getUpdatedVel(key, nmbr) {
+function getUpdatedVel(key) {
     switch(key) {
         case 'ArrowLeft': return {x:-1, y:0};
         case 'ArrowUp': return {x:0, y:-1};

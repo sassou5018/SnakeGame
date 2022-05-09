@@ -76,7 +76,7 @@ io.on("connection", client=>{
       const roomName = clientRooms[client.id];
       if (!roomName) return;
 
-      const vel = getUpdatedVel(key, client.number);
+      const vel = getUpdatedVel(key);
       if (vel) {
         state[roomName].players[client.number - 1].vel = vel;
       }
