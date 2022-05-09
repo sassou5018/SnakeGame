@@ -127,24 +127,12 @@ function randomFood(state) {
 }
 
 
-function getUpdatedVel(key, state) {
+function getUpdatedVel(key) {
     switch(key) {
-        case 'ArrowLeft':{
-            if (state.players[0].vel.x==1 || state.players[1].vel.x==1){
-                return {x:1, y0};
-            } else {return {x:-1, y:0};}}
-        case 'ArrowUp':{
-            if (state.players[0].vel.y==1 || state.players[1].vel.y==1){
-                return {x:0, y:1};
-            } else{return {x:0, y:-1}};}
-        case 'ArrowRight':{
-            if (state.players[0].vel.x==-1 || state.players[1].vel.x==-1){
-            return {x:-1, y0};
-        } else {return {x:1, y:0};}}
-        case 'ArrowDown':{
-            if (state.players[0].vel.y==-1 || state.players[1].vel.y==-1){
-                return {x:0, y:-1};
-            } else {return {x:0, y:1};}}
+        case 'ArrowLeft': return {x:-1, y:0};
+        case 'ArrowUp': return {x:0, y:-1};
+        case 'ArrowRight': return {x:1, y:0};
+        case 'ArrowDown': return {x:0, y:1};
     }
 }
 
